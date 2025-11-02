@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #0a0a0a, #3a4452);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calc {
+  height: 28rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid rgba(54, 53, 53, 0.276);
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 3px 19px rgb(0, 0, 0);
+  background-color: rgb(3, 1, 17);
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: end;
+  padding-inline: 1.5rem;
+}
+.btn {
+  height: 3.3rem;
+  width: 3.3rem;
+  color: #fff;
+  background: transparent;
+  border: 0.4px solid rgba(255, 255, 255, 0.137);
+  outline: none;
+  font-size: 1.3rem;
+  margin: 0.4rem;
+  padding: 2px;
+  box-shadow: -8px -8px 15px rgba(86, 84, 84, 0.1);
+  border-radius: 50%;
+}
+input::placeholder {
+  color: #ffff;
+  overflow: hidden;
+}
+
+#operator {
+  color: #0f0;
+}
+#ac {
+  color: red;
+  background: rgba(164, 74, 74, 0.455);
+}
+#del {
+  color: rgba(255, 255, 0, 0.91);
+  background: rgba(72, 72, 32, 0.281);
+}
+
+#equalbtn {
+  background: rgb(215, 134, 20);
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .calc {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .input {
+    width: 90%;
+  }
+}
+@media (max-width: 350px) {
+  .calc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .btn {
+    height: 2rem;
+    width: 2rem;
+    font-size: 0.7rem;
+  }
+  .input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 750px) {
+  .calc {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .btn {
+    height: 13vh;
+    width: 15vw;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.568);
+  }
+  .input {
+    width: 80%;
+    font-size: 2rem;
+  }
+}
